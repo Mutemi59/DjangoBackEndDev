@@ -1,0 +1,93 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.791);
+    
+ }
+
+ .logo{
+    margin: 0 10px;
+ }
+
+ .nav_a{
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    margin: 0 10px;
+ }
+
+ .home_main{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+ }
+
+ .alert-msg-container{
+  height: 70px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+ .alert-msg{
+  text-align: center;
+  padding: 20px 10px;
+  padding-right: 20px;
+  background-color: rgba(255, 166, 0, 0.688);
+  border-radius: 10px;
+
+ }
+
+ .close-alert{
+  margin-left: 40px;
+ }
+
+ .close-alert i{
+  font-size: 20px;
+ }
+
+ table{
+   margin: 10px auto;
+   border-radius: 5px;
+ }
+
+ table, th, td{
+   padding: 20px;
+   border: 1px solid rgba(0, 0, 0, 0.791);
+   border-collapse: collapse;
+ }
+
+ table th{
+   background-color: rgba(0, 0, 0, 0.791);
+   color: white;
+
+ }
+  
+ .edit_icon{
+   color: orange;
+ }
+
+
+ .add_record_btn{
+   margin: 50px 45%;
+   margin-bottom: 120px;
+ }
+
+ .add_record_btn a{
+   text-decoration: none;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.791);
+   padding: 15px 10px;
+   border-radius: 5px;
+ }

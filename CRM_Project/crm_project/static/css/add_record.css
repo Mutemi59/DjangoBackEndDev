@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.791);
+  
+}
+
+
+.logo{
+  margin: 0 10px;
+}
+
+.nav_a{
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.alert-msg-container{
+  height: 70px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+ .alert-msg{
+  text-align: center;
+  padding: 20px 10px;
+  padding-right: 20px;
+  background-color: rgba(255, 166, 0, 0.688);
+  border-radius: 10px;
+
+ }
+
+ .close-alert{
+  margin-left: 40px;
+ }
+
+ .close-alert i{
+  font-size: 20px;
+ }
+ 
+  form{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 600px;
+  }
+ 
+  .input_field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+ 
+  .input_field label{
+    font-weight: bold;
+    
+  } 
+ 
+  .input_field input{
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.791);
+    padding: 14px 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+ 
+  .submit_field input{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.791);
+    padding: 15px 30px;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+  }

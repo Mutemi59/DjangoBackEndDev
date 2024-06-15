@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+{% block content %}
+{% include "header2.html" %}
+    <form action="" method="POST" class="register_form">
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="input_field">
+                <label for="{{field.label}}">{{field.label}}</label>
+                {{field}}
+            </div>
+        {% endfor %}
+        {% if page == "signIn" %}
+            <div class="submit_field">
+                <input type="submit" value="Sign In">
+                <p>Create an Account?<a href="{% url 'signUp' %}">Sign Up</a></p>
+            </div>
+        {% else %}
+            <div class="submit_field">
+                <input type="submit" value="Sign Up">
+                <p>Have an Account?<a href="{% url 'signIn' %}">Log In</a></p>
+            </div>
+        {% endif %}
+
+    </form>
+{% endblock content %}

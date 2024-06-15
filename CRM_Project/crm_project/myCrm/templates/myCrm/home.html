@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+{% include "header.html" %}
+
+    {% include "myCrm/alert.html" %}
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>email</th>
+            <th>Date Created</th>
+        </tr>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>
+                        <a class="nav_a edit_icon" href="{% url 'update' user.id %}">
+                            <i class="fa-solid fa-user-pen"></i>
+                        </a>
+                        {{user.id}}
+                    </td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.first_name}}</td>
+                    <td>{{user.last_name}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.date_joined}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="add_record_btn">
+        <a href="{% url 'add_record' %}">add a record</a>
+    </div>
+
+{% endblock content %}
